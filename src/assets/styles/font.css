@@ -10,13 +10,30 @@
   font-family: Montserrat-bold;
   src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
 }
+@font-face {
+  font-family: Montserrat-medium-italic;
+  src: url("../fonts/Montserrat/Montserrat-MediumItalic.ttf");
+}
+@font-face {
+  font-family: Montserrat-thin-italic;
+  src: url("../fonts/Montserrat/Montserrat-ThinItalic.ttf");
+}
 
 .font-regular {
   font-family: Montserrat-regular;
 }
+
 .font-semibolder {
   font-family: Montserrat-semibold;
 }
+
 .font-bolder {
   font-family: Montserrat-bold;
+}
+
+.font-medium-italic {
+  font-family: Montserrat-medium-italic;
+}
+.font-thin-italic {
+  font-family: Montserrat-thin-italic;
 }

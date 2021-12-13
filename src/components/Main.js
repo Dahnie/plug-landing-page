@@ -4,7 +4,10 @@ import rafiki_3 from "../assets/images/rafiki-3.svg"
 import rafiki_4 from "../assets/images/rafiki-4.svg"
 import rafiki_5 from "../assets/images/rafiki-5.svg"
 import yellow_line from "../assets/images/yellow-line.svg"
+import white_line from "../assets/images/white-line.svg"
+import profile from "../assets/images/picss.png"
 const Main = () => {
+    const profileName = ["Dannyboy", "Sunday", "Akpan", "Anjola", "Kolade", "Laide", "Bunmi", "Iyinoluwa", "Ay"]
     return (
         <main className="font-body">
             <div className="layer-1 grid grid-cols-12 gap-1">
@@ -26,7 +29,7 @@ const Main = () => {
                     <img src={rafiki_1} width="600" height="600" alt="rafifki-svg" />
                 </div>
             </div>
-            <div className="layer-2 gap-1 mt-14">
+            <div className="layer-2 mt-14" id="how-it-works">
                 <div className="up text-center ">
                     <div className="major text-4xl font-semibolder text-primary">
                         How it works
@@ -52,18 +55,82 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            <div className="layer-3">
-                <div className="right grid grid-cols-12 gap-1">
-                    <div className="left col-span-6 flex justify-start">
-                        <img src={rafiki_3} width="600" height="600" alt="rafifki-svg" />
+            <div className="layer-3 grid grid-cols-12 gap-1">
+                <div className="left col-span-6 flex justify-start">
+                    <img src={rafiki_3} width="600" height="600" alt="rafifki-svg" />
+                </div>
+                <div className="left col-span-6  pl-24 flex flex-col justify-center">
+                    <div className="major text-4xl font-semibolder text-primary">
+                        Check Products
                     </div>
-                    <div className="left col-span-6  pl-24 flex flex-col justify-center">
-                        <div className="major text-4xl font-semibolder text-primary">
-                            Check Products
-                        </div>
-                        <div className="minor text-primary opacity-60 w-4/6 my-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p
-                        </div>
+                    <div className="minor text-primary opacity-60 w-4/6 my-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p
+                    </div>
+                </div>
+            </div>
+            <div className="layer-4 grid grid-cols-12 gap-1">
+                <div className="left col-span-6  pl-24 flex flex-col justify-center">
+                    <div className="major text-4xl font-semibolder text-primary">
+                        Check Products
+                    </div>
+                    <div className="minor text-primary opacity-60 w-4/6 my-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p
+                    </div>
+                </div>
+                <div className="right col-span-6 flex justify-start">
+                    <img src={rafiki_4} width="550" height="550" alt="rafifki-svg" />
+                </div>
+            </div>
+            <div className="layer-5 bg-primaryGray text-center " id="download">
+                <div className="major text-4xl font-semibolder text-primary py-7">Right Business, Right Audience</div>
+                <div className="minor w-3/6 mx-auto text-black opacity-75 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing eli Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Sed sed.
+                </div>
+                <div className="font-semibolder color text-linkYellow">
+                    Read more &gt;
+                </div>
+                <div className="flex justify-center">
+                    <img width="450" height="450" src={rafiki_5} alt="rafiki-svg" />
+                </div>
+                <div className="minor mx-auto text-secondaryGray opacity-80 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing.
+                </div>
+
+                <div className="link mx-auto py-5">
+                    <button className="text-center bg-primary text-white font-semibolder py-2.5 px-12 rounded">Download from Google Play</button>
+                </div>
+            </div>
+            <div className="layer-6 bg-primary flex pb-16">
+                <div className="left pl-32">
+                    <div className="minor text-white text-4xl font-thin-italic w-1/12 pt-14 flex flex-col justify-center">People Are Saying About Us</div>
+                    <div className="division py-4">
+                        <img src={white_line} alt="line" />
+                    </div>
+                    <div className="flex font-regular text-white py-3">
+                        See all <button className="w-6 h-6 flex justify-center font-semibolder bg-linkYellow text-white rounded-full  mx-2">&gt;</button>
+                    </div>
+                </div>
+                <div className="right pt-14 ">
+                    <div className="cards-container flex w-full 2xl:max-w-7xl xl:max-w-5xl lg:max-w-3xl">
+                        {profileName.map(names => (
+                            <div className="card bg-white rounded-md text-center flex flex-col mx-4">
+                                <div className="up message font-medium-italic text-black py-3 px-5 text-left leading-8">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet justo. Nulla varius vitae.
+                                </div>
+                                <div className="down details px-5 pb-4 flex">
+                                    <div className="profile ">
+                                        <img src={profile} alt="profile" />
+                                    </div>
+                                    <div className="px-3 pt-1 text-left">
+                                        <div className="name font-semibolder text-primary">
+                                            {names}
+                                        </div>
+                                        <div className="status font-semibolder text-sm text-gray-500">
+                                            Student
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

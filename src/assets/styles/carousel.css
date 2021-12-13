@@ -1,0 +1,20 @@
+/* style={{ position: "relative", maxWidth: "50rem ", overflowX: "scroll", scrollSnapType: "x mandatory", msOverflowStyle: "none", scrollbarWidth: "none", }} */
+
+.cards-container {
+  position: relative;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.card {
+  min-width: 260px;
+}
+
+* {
+  scroll-snap-align: center;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}

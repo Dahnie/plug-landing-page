@@ -1,4 +1,5 @@
-import './App.css';
+import './assets/styles/carousel.css';
+import Footer from './components/Footer';
 import Main from './components/Main';
 import Navbar from './components/Navbar';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Main />
+      <Footer />
     </div>
   );
 }
