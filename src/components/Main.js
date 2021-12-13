@@ -11,7 +11,8 @@ const Main = () => {
     return (
         <main className="font-body">
             <div className="layer-1 grid grid-cols-12 gap-1">
-                <div className="left col-span-6 pl-24 flex flex-col justify-center">
+                <div data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" className="left col-span-6 pl-24 flex flex-col justify-center">
                     <div className="major text-5xl font-semibolder text-primary">
                         Making sales and<br /> Easier than before
                     </div>
@@ -25,12 +26,14 @@ const Main = () => {
                         <button className="text-center bg-primary text-white w-2/4 font-regular py-2.5 px-1 rounded">Get Started</button>
                     </div>
                 </div>
-                <div className="right col-span-6 flex justify-start">
+                <div data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" className="right col-span-6 flex justify-start">
                     <img src={rafiki_1} width="600" height="600" alt="rafifki-svg" />
                 </div>
             </div>
             <div className="layer-2 mt-14" id="how-it-works">
-                <div className="up text-center ">
+                <div data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" className="up text-center ">
                     <div className="major text-4xl font-semibolder text-primary">
                         How it works
                     </div>
@@ -42,7 +45,8 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="down grid grid-cols-12 gap-1">
-                    <div className="left col-span-6  pl-24 flex flex-col justify-center">
+                    <div data-aos="fade-left" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out" className="left col-span-6  pl-24 flex flex-col justify-center">
                         <div className="major text-4xl font-semibolder text-primary">
                             Upload Business
                         </div>
@@ -50,16 +54,19 @@ const Main = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p
                         </div>
                     </div>
-                    <div className="right col-span-6 flex justify-start">
+                    <div data-aos="fade-right" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out" className="right col-span-6 flex justify-start">
                         <img src={rafiki_2} width="600" height="600" alt="rafifki-svg" />
                     </div>
                 </div>
             </div>
             <div className="layer-3 grid grid-cols-12 gap-1">
-                <div className="left col-span-6 flex justify-start">
+                <div data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" className="left col-span-6 flex justify-start">
                     <img src={rafiki_3} width="600" height="600" alt="rafifki-svg" />
                 </div>
-                <div className="left col-span-6  pl-24 flex flex-col justify-center">
+                <div data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" className="left col-span-6  pl-24 flex flex-col justify-center">
                     <div className="major text-4xl font-semibolder text-primary">
                         Check Products
                     </div>
@@ -69,7 +76,8 @@ const Main = () => {
                 </div>
             </div>
             <div className="layer-4 grid grid-cols-12 gap-1">
-                <div className="left col-span-6  pl-24 flex flex-col justify-center">
+                <div data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" className="left col-span-6  pl-24 flex flex-col justify-center">
                     <div className="major text-4xl font-semibolder text-primary">
                         Check Products
                     </div>
@@ -77,11 +85,13 @@ const Main = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec p
                     </div>
                 </div>
-                <div className="right col-span-6 flex justify-start">
+                <div data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" className="right col-span-6 flex justify-start">
                     <img src={rafiki_4} width="550" height="550" alt="rafifki-svg" />
                 </div>
             </div>
-            <div className="layer-5 bg-primaryGray text-center " id="download">
+            <div data-aos="fade-up" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" className="layer-5 bg-primaryGray text-center " id="download">
                 <div className="major text-4xl font-semibolder text-primary py-7">Right Business, Right Audience</div>
                 <div className="minor w-3/6 mx-auto text-black opacity-75 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing eli Lorem ipsum dolor
                     sit amet, consectetur adipiscing elit. Sed sed.
@@ -100,7 +110,8 @@ const Main = () => {
                 </div>
             </div>
             <div className="layer-6 bg-primary flex pb-16">
-                <div className="left pl-32">
+                <div data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" className="left pl-32">
                     <div className="minor text-white text-4xl font-thin-italic w-1/12 pt-14 flex flex-col justify-center">People Are Saying About Us</div>
                     <div className="division py-4">
                         <img src={white_line} alt="line" />
@@ -109,7 +120,8 @@ const Main = () => {
                         See all <button className="w-6 h-6 flex justify-center font-semibolder bg-linkYellow text-white rounded-full  mx-2">&gt;</button>
                     </div>
                 </div>
-                <div className="right pt-14 ">
+                <div data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" className="right pt-14 ">
                     <div className="cards-container flex w-full 2xl:max-w-7xl xl:max-w-5xl lg:max-w-3xl">
                         {profileName.map(names => (
                             <div className="card bg-white rounded-md text-center flex flex-col mx-4">

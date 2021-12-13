@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div className="footer bg-white flex justify-around py-8">
-            <div className="left pl-32">
+            <div data-aos="fade-left" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" className="left pl-32">
                 <img width="70" height="70" src={logo} alt="logo" />
                 <p className="text-secondaryGray font-regular w-5/12 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet justo.</p>
             </div>
-            <div className="right flex pr-10">
+            <div data-aos="fade-right" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" className="right flex pr-10">
                 <div className="left px-10">
                     <div className="heading text-linkYellow font-semibolder py-3">Products</div>
                     <div className="sub-links text-primary font-semibolder flex flex-col">
